@@ -1,13 +1,77 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  text-align: center;
+  font-size: 25px;
+  padding: 5px 0 10px 0;
+  font-weight: 500;
+}
+.login-box{
+  width: 500px;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: -1px -1px 41px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -1px -1px 41px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px -1px 41px 0px rgba(0,0,0,0.75);;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main{
+  width: 100%;
+  height: 100vh;
+}
+.main .head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px;
+}
+.form-box{
+  position: fixed;
+  z-index: 11;
+  width: 600px;
+  height: fit-content;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-30%);
+  background-color: #fdfdfd;
+  transition: .5s;
+  -webkit-box-shadow: -1px -1px 255px 130px rgba(179,179,179,1);
+  -moz-box-shadow: -1px -1px 255px 130px rgba(179,179,179,1);
+  box-shadow: -1px -1px 255px 130px rgba(179,179,179,1);
+  border-radius: 10px;
+}
+
+.form-body{
+ margin: 10px;
+}
+.disable{
+  display: none;
+}
+.pop-head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+  padding-bottom: 10px;
+}
+.user-list{
+  margin:50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.user-list table{
+  width: 80%;
+
 }
