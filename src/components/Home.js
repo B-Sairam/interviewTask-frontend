@@ -62,7 +62,7 @@ const Home = () => {
   return <>
   <div className='main'>
     <div className='head'>
-      <h3 className='m-2'>{user.name}!!</h3>
+      <h3 className='m-2'>Welcome {user.name}!!</h3>
       <div>
       <button className='btn btn-warning m-2' onClick={()=>setPopup(true)}>Add users +</button>
       <button className='btn btn-primary m-2' onClick={()=>Logout()}>Logout</button>
